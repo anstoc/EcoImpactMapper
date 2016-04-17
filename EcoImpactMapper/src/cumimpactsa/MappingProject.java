@@ -72,10 +72,9 @@ public class MappingProject
     {
         processors = new ArrayList<PreProcessor>();
         processors.add(new IdentityProcessor());
-        processors.add(new PercentileTransformer());
         processors.add(new LogTransformer());
         processors.add(new Rescaler()); 
-        processors.add(new AreaRefiner()); 
+        
     }
     
     public String[] getProcessorNames()

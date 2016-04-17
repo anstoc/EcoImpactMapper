@@ -799,6 +799,7 @@ public class MainWindow extends javax.swing.JFrame {
             };
             try
             {
+                this.updateGraphics();
                 worker.execute();
                 
                 //block whil processing, but update progress bar
@@ -883,6 +884,7 @@ public class MainWindow extends javax.swing.JFrame {
             };
             try
             {
+                this.updateGraphics();
                 worker.execute();
 
                 //block whil processing, but update progress bar
@@ -969,6 +971,7 @@ public class MainWindow extends javax.swing.JFrame {
             };
             try
             {
+                this.updateGraphics();
                 worker.execute();
 
                 //block whil processing, but update progress bar
@@ -1052,6 +1055,7 @@ public class MainWindow extends javax.swing.JFrame {
             };
             try
             {
+                this.updateGraphics();
                 worker.execute();
 
                 //block whil processing, but update progress bar
@@ -1333,6 +1337,7 @@ public class MainWindow extends javax.swing.JFrame {
             };
             try
             {
+                this.updateGraphics();
                 worker.execute();
 
                 //block whil processing, but update progress bar
@@ -1441,6 +1446,7 @@ public class MainWindow extends javax.swing.JFrame {
             };
             try
             {
+                this.updateGraphics();
                 worker.execute();
 
                 //block whil processing, but update progress bar
@@ -1451,7 +1457,6 @@ public class MainWindow extends javax.swing.JFrame {
                     progressBar.setValue(GlobalResources.mappingProject.getProcessingProgressPercent());
                     progressBar.update(progressBar.getGraphics());
                     Thread.sleep(500);
-
                 }
 
                 Thread.sleep(100); //
